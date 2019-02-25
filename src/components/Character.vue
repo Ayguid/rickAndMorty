@@ -20,9 +20,10 @@
     </b-list-group>
   </b-card>
 </div> -->
+
 <!-- TWO -->
 <div class="col-sm-6 col-md-4 col-lg-3 mb-4 unselectable fade_in ">
-    <div class="hovereffect ">
+    <div class="card_hov ">
         <img class="img-responsive" :src="character.image" alt="">
             <div class="overlay">
                 <h2>{{character.name}}</h2>

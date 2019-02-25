@@ -27,7 +27,7 @@ body{
 .unselectable {
   user-select: none;
 }
-.hovereffect {
+.card_hov {
   width: 100%;
   height: 100%;
   float: left;
@@ -37,7 +37,7 @@ body{
   cursor: default;
 }
 
-.hovereffect .overlay {
+.card_hov .overlay {
   position: absolute;
   overflow: hidden;
   width: 90%;
@@ -53,7 +53,7 @@ body{
   transform: scale(0,1);
 }
 
-.hovereffect:hover .overlay {
+.card_hov:hover .overlay {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
@@ -65,19 +65,19 @@ body{
 
 }
 
-.hovereffect img {
+.card_hov img {
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 
-.hovereffect:hover img {
+.card_hov:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.4);
   -webkit-filter: brightness(0.4);
 }
 
-.hovereffect h2, .hovereffect h3 {
+.card_hov h2, .card_hov h3 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -93,7 +93,7 @@ body{
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect a, .hovereffect p {
+.card_hov a, .card_hov p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
@@ -104,7 +104,7 @@ body{
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2, .hovereffect:hover h3 {
+.card_hov:hover a, .card_hov:hover p, .card_hov:hover h2, .card_hov:hover h3 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
